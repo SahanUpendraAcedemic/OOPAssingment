@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+	min-height: 110%;
+	min-width: 100%;
+}
+.nav h1{
+    font-size: 70px;
+    color: white;
+}
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.container{
+	height: 110%;
+	width: 100%;
+	display: block;
+	position: absolute;
+ 	background-image: linear-gradient(rgba(0,0,0,0.60),rgb(0, 0, 0.75)),url(../img/backgroud.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: 600;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #04afde;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all ease 0.55s;
+}
+nav ul li:hover::after{
+    width: 100%;
+     
+}
+.content{
+	align-items: center;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 25px;
+}
+.formdiv{
+	background-color:(rgb(225,225,225.75));
+	position: relative;
+	left: 10%;
+	align-items: center;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	width: 75%;
+	border: 2px solid;
+	border-radius: 5px;
+	border-color: black;
+	font-family: sans-serif;
+}
+
+.formdiv tr{
+	height: 50px;
+	margin: 100px;	
+}
+.formdiv td{
+	font-size: 20px;
+	color: white;
+}
+
+.formdiv button{
+    width: 100%;	
+    padding: 5px 0;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0 0 0px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+.formdiv button:hover {
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.formdiv input{
+	width: 100%;
+	height: 20%;
+	text-align: center;
+}
+.formdiv table{
+	padding: 10px10px10px10px;
+	width: 100%;
+}
+.radiospan{
+	width: 100%;
+    font-size:20px;
+    justify-content: center;
+}
+.radiospan label{
+	text-align: left;
+    margin: 120px;
+}
+.radiospan input{
+	position:relative;
+	right: 10%;
+}

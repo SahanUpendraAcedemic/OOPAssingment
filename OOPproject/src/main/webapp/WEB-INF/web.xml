@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+  <!--USER/STAFF/ORDER -->
+<servlet>
+    <servlet-name>userLoginServlet</servlet-name>
+    <servlet-class>user.userLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userLoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>userRegisterServlet</servlet-name>
+    <servlet-class>user.userRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>userRegisterServlet</servlet-name>
+    <url-pattern>/uRegServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>StaffLoginServlet</servlet-name>
+    <servlet-class>staff.StaffLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StaffLoginServlet</servlet-name>
+    <url-pattern>/stafflogg-in</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>orderInsertServlet</servlet-name>
+    <servlet-class>order.orderInsertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderInsertServlet</servlet-name>
+    <url-pattern>/order</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>orderUpdateServlet</servlet-name>
+    <servlet-class>order.orderUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderUpdateServlet</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>orderDeleteServlet</servlet-name>
+    <servlet-class>order.orderDeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderDeleteServlet</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>orderReview</servlet-name>
+    <servlet-class>order.reviewOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderReview</servlet-name>
+    <url-pattern>/review</url-pattern>
+  </servlet-mapping>
+
+  <!--CATALOG -->
+   <servlet>
+   	<servlet-name>View-servlet</servlet-name>
+    <servlet-class>catalog.ViewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>View-servlet</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>update-servlet</display-name>
+    <servlet-name>update-servlet</servlet-name>
+    <servlet-class>catalog.updateservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>update-servlet</servlet-name>
+    <url-pattern>/catupdate</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>ItemADD</servlet-name>
+    <servlet-class>catalog.insertServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemADD</servlet-name>
+    <url-pattern>/catinsert</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>ItemDelete</servlet-name>
+    <servlet-class>catalog.deleteservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemDelete</servlet-name>
+    <url-pattern>/deleteItem</url-pattern>
+  </servlet-mapping>
+</web-app>

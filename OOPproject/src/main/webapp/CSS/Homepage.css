@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background{
+    background-image: url('gos1.jpg');
+    height: 110%;
+}
+.nav h1{
+    font-size: 70px;
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../img/backgroud.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.logo{
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: greenyellow;
+    border-radius: 50px;
+
+}
+.tile{
+	height: 200px;
+	width: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+.tile2{
+	height: 200px;
+	width: 50%;
+    margin-top: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: 600;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #04afde;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: all ease 0.55s;
+}
+nav ul li:hover::after{
+    width: 100%;
+     
+}
+.content{
+    width: 100%;
+    transform: translateY(-20%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+	position: static;
+    font-size: 70px;
+  	margin-top: 80px;
+    color: white;
+    z-index: -1;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 25px;
+}
+.content button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.content span {
+    background: #04afde;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.55s;
+}
+.content button:hover span {
+    width: 100%;
+}
+.content button:hover {
+    border: none;
+}
